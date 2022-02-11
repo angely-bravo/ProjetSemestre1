@@ -1,0 +1,416 @@
+    @font-face {
+        font-family: Sterilict;
+        src: url(../css/font/Sterilict.ttf);
+    }
+    
+    body {
+        font-family: Sterilict;
+        line-height: 170%;
+        text-align: CENTER;
+        background-image: url(../images/fond.jpg);
+        line-height: 150%;
+        margin: auto;
+    }
+    
+    header {
+        display: flex;
+        width: 100%;
+        background-color: grey;
+        margin-top: auto;
+        border: 2px solid yellow;
+        /* min-width: 1260px;*/
+    }
+    
+    nav {
+        display: flex;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0 20px 0;
+    }
+    
+    nav ul {
+        display: block;
+        font-family: Sterilict;
+        margin: auto;
+        padding: 0;
+        line-height: 30px;
+        text-align: center;
+    }
+    
+    nav li {
+        font-family: Sterilict;
+        display: block;
+        list-style: none;
+        float: left;
+        position: relative;
+        color: yellow;
+        margin: auto;
+        position: relative;
+    }
+    
+    nav span {
+        font-family: Sterilict;
+        color: yellow;
+        width: auto;
+        height: 50px;
+        padding: 20px 0px 50px 0px;
+    }
+    
+    nav ul li a {
+        font-family: Sterilict;
+        color: yellow;
+        text-decoration: none;
+        height: 30px;
+        display: block;
+        border: 0px solid gray;
+        padding: 5px 5px 5px 5px;
+        background-color: gray;
+    }
+    
+    nav ul ul {
+        position: absolute;
+        top: 55px;
+        padding: 0px 0px 20px 0px;
+        visibility: hidden;
+        background-color: gray;
+        border: 2px solid yellow;
+        /* margin: auto;*/
+    }
+    
+    nav ul li:hover ul {
+        visibility: visible;
+        height: auto;
+        text-align: left;
+    }
+    
+    .quote {
+        text-align: center;
+        background-color: gray;
+        border: 2px solid yellow;
+    }
+    /*nav div {
+    display: block;
+    width: 20%;
+    height: 50px;
+}
+
+.submenu {
+    display: none;
+}
+
+.submenu div {
+    border-left: 2px solid yellow;
+    border-right: 2px solid yellow;
+}
+
+div.submenu div:last-child {
+    border-bottom: 2px solid yellow;
+}
+
+nav div:hover {
+    /*background-image: url("../images/fondgris.jpg");
+    background-color: grey;
+}
+
+nav div:hover .submenu {
+    display: block;
+    position: relative;
+    top: 30px;
+    text-align: center;
+}
+
+nav div.submenu div {
+    /*background-image: url("../images/fondgris.jpg");
+    background-color: grey;
+    border-left: 2px, solid, yellow;
+    border-right: 2px, solid, yellow;
+    width: 150px;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    width: 75%;
+    margin: auto;
+    height: 50px;
+    text-align: center;
+    color: #FFE81F;
+}
+
+header {
+    /*background-image: url("../images/fondgris.jpg");
+    background-color: grey;
+    border: 2px solid yellow;
+}
+*/
+    
+    a {
+        text-decoration: none;
+        color: #FFE81F;
+    }
+    
+    a:hover {
+        color: rgb(0, 255, 42);
+    }
+    
+    blockquote {
+        text-align: center;
+    }
+    
+    h1 {
+        text-align: center;
+        margin: 50px;
+        padding: 10px;
+        border: 5px solid white;
+        text-decoration: solid;
+    }
+    
+    h2 {
+        text-align: center;
+        margin: 50px;
+    }
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        color: yellow;
+        width: 900px;
+        margin: auto;
+    }
+    
+    footer {
+        text-align: center;
+    }
+    
+    #pdroite {
+        margin: 60px 150px 50px 150px;
+    }
+    
+    #pgauche {
+        margin: 65px 20px 50px 20px;
+    }
+    
+    #pcentre {
+        margin: 20px 0px 50px 50px;
+    }
+    
+    p {
+        text-indent: 20px;
+        margin: auto;
+    }
+    
+    .laser {
+        float: left;
+        padding: 10px;
+        max-width: 40%;
+        height: auto;
+        margin: 0px 20px 20px 50px;
+    }
+    
+    .bataille {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    
+    .gde {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
+    
+    .doublesaber {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
+    
+    .handle {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
+    
+    .blade {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
+    
+    table {
+        display: table;
+        border: 3px solid #ffffff;
+        block-size: auto;
+        width: 100%;
+        border-collapse: separate;
+        box-sizing: border-box;
+        text-indent: initial;
+        border-spacing: 2px;
+    }
+    
+    thead {
+        text-align: center;
+        width: auto;
+    }
+    
+    tbody {
+        text-align: center;
+        width: auto;
+    }
+    
+    tr:nth-child(odd) {
+        background-color: white;
+        width: 100%;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #CCC;
+        width: 100%;
+    }
+    
+    th {
+        background-color: #000000;
+    }
+    
+    table.promotions {
+        padding: 0 5px;
+    }
+    
+    td {
+        display: table-cell;
+        vertical-align: inherit;
+    }
+    
+    #nombre {
+        color: red;
+        font-weight: bold;
+    }
+    
+    #NA {
+        color: #000000;
+    }
+    
+    #black {
+        color: #000000;
+    }
+    
+    .liste {
+        display: block;
+        list-style-type: disc;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+    }
+    
+    #liste {
+        margin: 10px 0px 10px 0px;
+    }
+
+
+
+
+    /* MENU BURGER*/
+
+    @media(max-width: 1169px){
+        nav#mburger{
+            display: flex;
+            height: 200px;
+            color: yellow;
+            width: 100%;
+        }
+        nav{
+            display: none;
+        }
+    }
+    @media(min-width: 1170px){
+        nav#mburger{
+            display: none;
+        }
+        nav{
+            display: flex;
+        }
+    }
+    #imburger{
+        height: 75%;
+        position: relative;
+            left: -5%;
+    }
+    nav input:checked~div>div>label>#imburger{
+        left: 0%;
+    }
+    nav#mburger input{
+        display: none;
+    }
+    #logosite{
+        height: 200px;
+        position: absolute;
+            left: 60%;
+            bottom: 0%;
+    }
+    nav#mburger{
+        margin:auto;
+    }
+    nav>div>label>div{
+        position:relative;
+            left: -5%
+    }
+    nav#mburger>div:first-child{
+        position:relative;
+            right: 150px;
+        width: auto;
+    }
+    nav#mburger>div>input:checked~div{
+        display: block;
+        position: fixed;
+    }
+    nav#mburger>div>input:checked~div>a>#logosite{
+        display: none;
+    }
+    nav#mburger>div>div:first-of-type{
+        display: none;
+    }
+    #submenu2{
+        background-image: url(../images/fond.jpg);
+        height: 1000%;
+        width: 100%;
+        position: -webkit-sticky;
+        position: sticky;
+            left: 0%;
+            top: 0%;
+    }
+    div#submenu2>div{
+        height: 0.5%;
+        position:relative;
+            top : 50px;
+            left: -10%
+    }
+    input:checked + #mburger{
+        position: fixed;
+        right: 200px;
+    }
+    input:checked~.submenu3{
+        display: flex;
+        background-image: url(../images/fond.jpg);
+        height: 60000px;
+        flex-direction: column;
+        position: relative;
+        z-index: 1;
+    }
+    .submenu3>div{
+        position: relative;
+        border: 2px solid yellow;
+    }
+    .submenu3{
+        display: none;
+    }
+    nav#mburger>div>div:nth-child(2){
+        position: relative;
+            top: 50%;
+    }

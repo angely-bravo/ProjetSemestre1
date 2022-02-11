@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<!--  -->
+
+
+<head>
+
+	<meta charset="utf-8">
+	<link rel="icon" href="<%= BASE_URL %>logo_ml.png">
+    <title> (logo) NomDuSite </title><meta name="description" content="Notre Société est une entreprise pour vous."/><meta name="keywords" content="Société de Services pour vous"/>
+    <link rel="stylesheet" type="text/css" href="../../css/stylesPROJET.css">
+</head>
+
+
+
+
+
+
+<body>
+
+
+	<header id="header">
+
+		<!-- Citation de l'entreprise , devise -->
+		<blockquote> Nous sommes là pour vous. <cite> EntrepriseMachin </cite> </blockquote>
+
+		
+		<nav> 
+
+
+<!--Accueil-->
+		</a>
+ 		   	<div class="submenu">
+ 		   		<a href="../../accueil.html"> Acceuil </a></div>
+			</div>
+		</a>
+
+
+<!-- Produit -->
+Notre Produit	
+ 		<div>
+ 				<div><a href="../../menu/produit/concept.html"> Le concept </a></div>
+  				<div><a href="../../menu/produit/infoproduit.html"> Tout le détail de notre produit </a></div>
+  				<div><a href="../../menu/produit/promotion.html"> Toutes les promos ! </a></div>
+			</a>
+		</div>	
+
+
+
+<!-- Contact  -->
+Contact	
+		<div class="submenu">
+  			<div><a href="./noustrouver.html"> Contactez-nous </a></div>
+		</div>	
+
+
+<!-- Equipe et entreprise -->
+L'entreprise   	
+		<div class="submenu">
+				<div><a href="../../menu/entreprise-equipe/quisommesnous.html"> Qui sommes nous ? </a></div>
+  				<div><a href="../../menu/entreprise-equipe/equipe.html"> Notre équipe </a></div>
+			</a>
+		</div>
+
+
+<!-- Presse -->
+		<div>
+			<a href="../../menu/presse/presse.html"> Accès Presse </a>
+		</div>
+
+
+<!-- Nous Rejoindre -->
+Rejoignez notre équipe
+		<div class="submenu">
+			<a href="../../menu/postuler/postuler.html">
+				<div><a href="../../menu/postuler/metier1.html"> Metier 1 </a></div>
+	    		<div><a href="../../menu/postuler/metier2.html"> Metier 2 </a></div>
+	    		<div><a href="../../menu/postuler/metier3.html"> Metier 3 </a></div>
+		</div>
+
+
+<!-- FAQ -->
+Des Questions ? 
+		<div class="submenu">
+			<div><a href="../../menu/FAQ/questions.html"> Accès à la FAQ </a></div>
+		</div>	
+
+
+
+
+
+		
+
+
+
+
+
+		</nav>
+
+
+
+	</header>
+
+
+
+<div id="global">
+	<main>
+
+			<h1> Prenez-contact avec l'univers subspatial </h1>
+
+	</main>
+
+
+
+	<form action="sendToMySecondYearInIut.php" method="get">
+
+		<fieldset>
+			<legend> Informations personnelles </legend>
+			<!--Champ pour le nom -->
+			<label for="uname"> Nom * </label>
+			<input id="uname" name="uname" type="text" placeholder="Entrez votre nom" required>
+			<br>
+			<!--Champ pour le prénom-->
+			<label for="firstname"> Prénom * </label>
+			<input id="firstname" name="firstname" type="text" placeholder="Entrez votre prénom" required>
+			<br>
+			<!--Champ pour Email-->
+			<label for="email"> Email *</label>
+			<input id="email" name="email" type="email" placeholder="yourmail@domain.com" required>
+			<br>
+			<!--Champ pour Code Postal-->
+			<label for="codep"> Code Postal * </label>
+			<input id="codep" name="codep" type="text" placeholder="Entrez votre code postal" required>
+			<br>
+			<!--Champ pour Pays-->
+			<label for="pays"> Pays d'origine * </label>
+			<select name="pays" id="pays" value required>
+				<option value="fr" selected>France</option>
+				<option value="usa">USA</option>
+				<option value="chine">Chine</option>
+				<option value="bresil">Brésil</option>
+				<option value="australie">Australie</option>
+				<option value="laponie">Laponie</option>
+			</select>
+			<br>
+			<!--Champ pour Planète-->
+			<label for="planète"> Planète d'origine </label>
+			<select name="planète" id="planète" value>
+				<option value="earth" selected>Terre</option>
+				<option value="coruscant">Coruscant</option>
+				<option value="dantooine">Dantooine</option>
+				<option value="kamino">Kamino</option>
+				<option value="kashyyyk">Kashyyyk</option>
+				<option value="ryloth">Ryloth</option>
+				<option value="tatooine">Tatooine</option>
+			</select>
+		</fieldset>
+
+		<fieldset>
+			<legend> Disponibilités </legend>
+			<!-- Champ “date à laquelle vous souhaitez être recontacté” -->
+			<label for="datedispo"> Date à laquelle vous souhaitez être recontacté * </label>
+			<input id="datedispo" name="datedispo" type="date" placeholder="Entrez une date de disponibilité" required>
+		</fieldset>
+
+		<fieldset>
+			<legend> Enquête </legend>
+			<!--Champ pour Message "Ou avez vous entendu parlé de nous?"-->
+			<label for="msg"> Comment êtes-vous parvenus à découvrir l'expérience Star Wars ? </label> <br>
+			<textarea id="msg" placeholder="Vous avez entendu parlé de nous via?" rows="2" cols="60"></textarea>
+			<br>
+			<!--Champ pour Message Libre-->
+			<label for="msg"> Une remarque ?  </label> <br>
+			<textarea id="msg" placeholder=" " rows="3" cols="60"></textarea>
+		</fieldset>
+
+		<!--Champ pour Lu et Approuvé-->
+		<label for="lu"> J’ai bien lu et j'entre dans l'expérience Star Wars * </label>
+		<input id="lu" name="lu" type="checkbox" required>
+		<br>
+		<!--Bouton Envoyer -->
+		<input type="submit" value="Envoyer">
+
+	</form>
+</div>
+
+</body>
+
+</html>

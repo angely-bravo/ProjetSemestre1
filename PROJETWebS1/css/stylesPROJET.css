@@ -1,0 +1,183 @@
+@font-face {
+    font-family:"Starjedi";
+    src: url(../font/starjedi/Starjedi.ttf);
+}
+
+@font-face {
+    font-family:"Starjhol";
+    src: url(../font/starjedi/Starjhol.ttf);
+}
+
+@font-face {
+    font-family:"Starjout";
+    src: url(../font/starjout/Starjout.ttf);
+}
+
+@font-face {
+    font-family:"STJEDISE";
+    src: url(../font/stjedise/STJEDISE.ttf);
+}
+
+@font-face {
+    font-family:"Stjldbl1";
+    src: url(../font/stjelogo/Stjldbl1.ttf);
+}
+
+@font-face {
+    font-family:"Stjldbl2";
+    src: url(../font/stjelogo/Stjldbl2.ttf);
+}
+@font-face {
+    font-family:"Strjmono";
+    src: url(../font/stjelogo/Strjmono.ttf);
+}
+
+
+
+html {
+   color: yellow;
+   font-family: "Starjedi"
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-y: scroll;
+    background-color: #000000;
+    background-image: url("../images/background.jpg");
+    background-position: center top;
+    background-repeat: repeat;
+    line-height: 16px;
+}
+
+#global {
+    width: 1000px;
+    margin: 0 auto 0 auto;
+
+}
+
+header{
+    display:flex;
+    flex-direction:column;
+    background-color: white;
+}
+
+#header{
+    width: 1000px;
+    margin: 0 auto 0 auto;
+    background-image: url("../images/background_nav2.jpg");
+    background-repeat: repeat;
+    }
+
+
+
+blockquote {
+    color:yellow;
+}
+
+
+nav {
+    align-items: baseline;
+    width:75%;
+    margin:auto;
+    height:20px;
+    display:flex;
+    flex-direction:row;
+}
+
+
+div {
+    width:100px;
+}
+
+.iconeTwi {
+    position: fixed;
+    bottom: 70px;
+    right: 30px;
+}
+
+.iconeFb {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+}
+
+
+h1 {
+    color: blue;
+}
+
+h2 {
+    padding: 10px 0px;
+    font-style:italic;
+    color:blue;
+    text-align:center;
+}
+
+h3 {
+    border: 1px solid #CCCCCC;
+}
+
+.submenu  {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    display:none;
+}
+
+main{
+    display:flex
+}
+
+
+
+article {
+    width: 300px;
+    background-color:#CCC;
+    max-width:500px;
+    min-width:200px;
+    flex-shrink : 2;
+    flex-grow: 3;
+}
+
+aside {
+    width: 200px;
+    background-color:#CCC;
+    max-width:250px;
+    min-width:150px;
+    flex-shrink : 1;
+    flex-grow: 1;
+}
+
+
+/* Style des liens <a> n'ayant pas été visités */
+a:link {color: yellow; text-decoration: none; }
+/* Style des liens <a> ayant été visités */
+a:visited {color: #0088FF; text-decoration: none; }
+/* Style des liens <a> si la souris les survole */
+a:hover {color: orange; text-decoration: none;}
+
+p {
+    margin: 30px 0px;
+    text-indent: 5%;
+}
+
+.image {
+    float: left;
+}
+
+.image {
+    float: right;
+    height: 300px;
+}
+
+
+
+
+
+
+
+
+

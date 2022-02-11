@@ -1,0 +1,94 @@
+body {
+	background-image: url("../images/fond.jpg");
+	text-align: center;
+	margin: auto;
+}
+
+header{
+    /*background-image: url("../images/fondgris.jpg");*/
+    background-color: grey;
+    border: 2px solid yellow;
+    font-family: 'Starwars', 'Arial', 'sans-serif';
+}
+nav{
+    display: flex;
+    width: 75%;
+    margin: auto;
+    height: 50px;
+    text-align: center;
+    color: #FFE81F;
+}
+a{
+    text-decoration: none;
+    color: #FFE81F;
+}
+a:hover{
+    color: rgb(0, 255, 42);
+}
+nav div{
+    display: block;
+    width: 20%;
+	height: 50px;
+}
+.submenu{
+    display: none;
+}
+.submenu div{
+    border-left: 2px solid yellow;
+    border-right: 2px solid yellow;
+}
+div.submenu div:last-child{
+    border-bottom: 2px solid yellow;
+}
+nav div:hover{
+    /*background-image: url("../images/fondgris.jpg");*/
+    background-color: grey;
+}
+nav div:hover .submenu{
+    display: block;
+    position: relative;
+		top: 30px;
+}
+nav div.submenu div{
+    /*background-image: url("../images/fondgris.jpg");*/
+    background-color: grey;
+    border-left: 2px, solid, yellow;
+    border-right: 2px, solid, yellow;
+    width: 150px;
+    margin: auto;
+}
+
+
+
+
+main{
+    color: #FFE81F;
+    font-family: "Starwars", "Arial", "sans-serif";
+
+}
+@font-face{
+	font-family: 'Starwars';
+	src: url(./font/Sterilict.ttf)
+}
+p{
+   line-height: 150%; 
+}
+main div{
+    display: block;
+}
+#container1{
+    display:flex;
+    border-bottom: 2px solid white;
+}
+#container2{
+    display: flex
+}
+.item{
+    width: 50%;
+}
+#container1>.item:first-child{
+    border-right: 2px solid white;
+}
+#container2>.item:first-child{
+    border-right: 2px solid white;
+}

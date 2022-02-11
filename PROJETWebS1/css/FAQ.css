@@ -1,0 +1,135 @@
+body {
+	background-image: url("../images/fond.jpg");
+	text-align: center;
+	margin: auto;
+}
+
+header{
+    /*background-image: url("../images/fondgris.jpg");*/
+    background-color: grey;
+    border: 2px solid yellow;
+}
+nav{
+    display: flex;
+    width: 75%;
+    margin: auto;
+    height: 50px;
+    text-align: center;
+    color: #FFE81F;
+}
+a{
+    text-decoration: none;
+    color: #FFE81F;
+}
+a:hover{
+    color: rgb(0, 255, 42);
+}
+nav div{
+    display: block;
+    width: 20%;
+	height: 50px;
+}
+.submenu{
+    display: none;
+}
+.submenu div{
+    border-left: 2px solid yellow;
+    border-right: 2px solid yellow;
+}
+div.submenu div:last-child{
+    border-bottom: 2px solid yellow;
+}
+nav div:hover{
+    /*background-image: url("../images/fondgris.jpg");*/
+    background-color: grey;
+}
+nav div:hover .submenu{
+    display: block;
+    position: relative;
+		top: 30px;
+}
+nav div.submenu div{
+    /*background-image: url("../images/fondgris.jpg");*/
+    background-color: grey;
+    border-left: 2px, solid, yellow;
+    border-right: 2px, solid, yellow;
+    width: 150px;
+    margin: auto;
+}
+
+
+
+main{
+	color: #FFE81F;
+	font-family: "Starwars","Arial","sans-serif";
+}
+div div.right{
+	float: left;
+	display: block;
+}
+div div.left{
+	float: right;
+	display: block;
+}
+main div{
+	padding: 0px 100px;
+}
+main>div:first-child>div{
+	text-decoration: bold;
+	height: 100px;
+}
+@font-face{
+	font-family: 'Starwars';
+	src: url(./font/Sterilict.ttf)
+}
+main>div:nth-child(2)>div{
+	word-spacing: 10px;
+	border-top: 2px solid yellow;
+	height: 400px;
+}
+.left{
+	display: flex;
+	float: left;
+}
+.right{
+	display: flex;
+	float: right;
+}
+p{
+	line-height: 200%;
+}
+main>div:first-child{
+	display: flex;
+	flex-wrap: wrap;
+}
+main>div:first-child div{
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 150px;
+}
+.global{
+	padding-top: 2%;
+}
+@media(max-width: 1734px){
+	main>div:nth-child(2)>div{
+		border-top: none;
+	}
+}
+#origine{
+	width: 50%;
+	height: 20%;
+	float: left;
+	max-height: 320px;
+	max-width: 493px;
+}
+h3{
+	border: 2px solid white;
+}
+#cristal{
+	width: 20%;
+	height: 30%;
+	float: right;
+	max-height: 402px;
+	max-width: 149.59px;
+}
+
